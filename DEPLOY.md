@@ -1,35 +1,56 @@
-# 🚀 Guia de Deploy na Vercel
+# 🚀 Guia de Deploy na Vercel - ESTRUTURA CORRIGIDA
 
-## Preparação do Projeto
+## ✅ Problema Resolvido
 
-Seu projeto já está configurado e otimizado para deploy na Vercel com máxima performance!
+A estrutura foi corrigida para usar a arquitetura serverless nativa da Vercel. Agora a API funcionará perfeitamente!
+
+## 📁 Nova Estrutura
+
+```
+projeto/
+├── api/
+│   ├── health.js                    # GET /api/health
+│   ├── index.js                     # GET /api/
+│   └── passos/
+│       ├── criar-conta.js           # GET /api/passos/criar-conta
+│       ├── login.js                 # GET /api/passos/login
+│       ├── pagar-assinatura.js      # GET /api/passos/pagar-assinatura
+│       └── trocar-assinatura.js     # GET /api/passos/trocar-assinatura
+├── lib/
+│   └── utils.js                     # Utilitários compartilhados
+├── index.html                       # Página de documentação
+├── vercel.json                      # Configuração simplificada
+└── arquivos JSON...
+```
+
+## 🎯 O que foi Corrigido
+
+1. **Estrutura Serverless**: Cada endpoint é uma função independente
+2. **Sem Express**: Uso da API nativa da Vercel (mais rápida)
+3. **Cache Otimizado**: Implementado diretamente nos headers
+4. **CORS Nativo**: Configurado sem dependências externas
+5. **Zero Dependências**: Não precisa instalar nada
 
 ## Opção 1: Deploy via Interface Web (Recomendado)
 
-### 1. Criar repositório Git
+### 1. Verificar se está tudo OK
 ```bash
-git init
-git add .
-git commit -m "API de Passos otimizada para Vercel"
+dir api
+dir lib
 ```
 
-### 2. Subir para GitHub
-1. Crie um repositório no GitHub
-2. Conecte o repositório local:
+### 2. Commit e Push
 ```bash
-git remote add origin https://github.com/seu-usuario/nome-do-repo.git
-git branch -M main
-git push -u origin main
+git add .
+git commit -m "Estrutura corrigida para Vercel serverless"
+git push origin main
 ```
 
 ### 3. Deploy na Vercel
 1. Acesse [vercel.com](https://vercel.com)
-2. Clique em "New Project"
-3. Conecte sua conta GitHub
-4. Selecione o repositório
-5. Clique em "Deploy"
-
-**Pronto! Sua API estará no ar em segundos!**
+2. Se já estava conectado, força um novo deploy
+3. Ou reimporte o repositório
+4. **Agora deve funcionar!**
 
 ## Opção 2: Deploy via CLI
 
@@ -38,17 +59,13 @@ git push -u origin main
 npm install -g vercel
 ```
 
-### 2. Login na Vercel
+### 2. Deploy direto
 ```bash
-vercel login
+vercel
 ```
 
-### 3. Deploy
+### 3. Para produção
 ```bash
-# Deploy de teste
-vercel
-
-# Deploy para produção
 vercel --prod
 ```
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Passos - Documentação</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .endpoint { 
+            background: #f5f5f5; 
+            padding: 0.5rem 1rem; 
+            margin: 0.5rem 0; 
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .status { color: #22c55e; font-weight: bold; }
+        .example { background: #f8f9fa; padding: 1rem; border-radius: 5px; margin: 1rem 0; }
+        .copy-btn { 
+            background: #3b82f6; 
+            color: white; 
+            border: none; 
+            padding: 0.25rem 0.5rem; 
+            border-radius: 3px; 
+            cursor: pointer;
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 API de Passos</h1>
+    <p class="status">✅ Status: Online</p>
+    
+    <h2>📖 Endpoints Disponíveis</h2>
+    
+    <div class="endpoint">
+        GET /api/passos/criar-conta
+        <button class="copy-btn" onclick="copyEndpoint('/api/passos/criar-conta')">Copiar</button>
+    </div>
+    <p>Retorna os passos para criar uma conta na plataforma.</p>
+    
+    <div class="endpoint">
+        GET /api/passos/login
+        <button class="copy-btn" onclick="copyEndpoint('/api/passos/login')">Copiar</button>
+    </div>
+    <p>Retorna os passos para fazer login na plataforma.</p>
+    
+    <div class="endpoint">
+        GET /api/passos/pagar-assinatura
+        <button class="copy-btn" onclick="copyEndpoint('/api/passos/pagar-assinatura')">Copiar</button>
+    </div>
+    <p>Retorna os passos para pagar/renovar a assinatura.</p>
+    
+    <div class="endpoint">
+        GET /api/passos/trocar-assinatura
+        <button class="copy-btn" onclick="copyEndpoint('/api/passos/trocar-assinatura')">Copiar</button>
+    </div>
+    <p>Retorna os passos para trocar de plano.</p>
+    
+    <div class="endpoint">
+        GET /api/health
+        <button class="copy-btn" onclick="copyEndpoint('/api/health')">Copiar</button>
+    </div>
+    <p>Verificação de saúde da API.</p>
+    
+    <h2>📋 Exemplo de Resposta</h2>
+    <div class="example">
+        <pre>{
+  "steps": [
+    {
+      "title": "1️⃣ Clique em 'Criar sua Conta'",
+      "text": "Na tela inicial, clique no botão **Criar sua Conta**.",
+      "image_url": "https://storage.cloud.google.com/...",
+      "alt_text": "Botão Criar Conta com seta"
+    }
+  ]
+}</pre>
+    </div>
+    
+    <h2>🔧 Teste Rápido</h2>
+    <button onclick="testApi()" style="background: #22c55e; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">
+        Testar API
+    </button>
+    <div id="test-result"></div>
+    
+    <h2>🌐 Para Desenvolvedores</h2>
+    <p>Esta API suporta CORS e pode ser acessada de qualquer origem. Ideal para integração com Dialogflow e outras aplicações.</p>
+    
+    <script>
+        function copyEndpoint(endpoint) {
+            const url = window.location.origin + endpoint;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('URL copiada: ' + url);
+            });
+        }
+        
+        function testApi() {
+            const resultDiv = document.getElementById('test-result');
+            resultDiv.innerHTML = '<p>🔄 Testando...</p>';
+            
+            fetch('/api/health')
+                .then(response => response.json())
+                .then(data => {
+                    resultDiv.innerHTML = '<div class="example"><strong>✅ Sucesso!</strong><br>' + JSON.stringify(data, null, 2) + '</div>';
+                })
+                .catch(error => {
+                    resultDiv.innerHTML = '<div class="example"><strong>❌ Erro:</strong><br>' + error.message + '</div>';
+                });
+        }
+    </script>
+</body>
+</html>
