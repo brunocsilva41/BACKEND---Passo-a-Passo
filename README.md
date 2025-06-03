@@ -85,10 +85,10 @@ Retorna a lista de todos os endpoints disponíveis.
 - `PORT`: Porta onde a API será executada (padrão: 3000)
 
 ### Arquivos JSON
-A API lê os seguintes arquivos JSON para servir os dados:
-- `criar_conta.json` - Passos para criar conta
-- `login.json` - Passos para fazer login
-- `pagar_assinatura_trocar.json` - Passos para pagar/trocar assinatura
+A API lê os seguintes arquivos JSON da pasta `data/` para servir os dados:
+- `data/criar_conta.json` - Passos para criar conta
+- `data/login.json` - Passos para fazer login
+- `data/pagar_assinatura_trocar.json` - Passos para pagar/trocar assinatura
 
 ## 🌐 CORS
 

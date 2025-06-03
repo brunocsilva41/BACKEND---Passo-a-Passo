@@ -29,7 +29,7 @@ function readJsonFile(filename) {
   }
 
   try {
-    const filePath = path.join(__dirname, filename);
+    const filePath = path.join(__dirname, 'data', filename);
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(fileContent);
     
@@ -50,9 +50,9 @@ function preloadJsonFiles() {
   files.forEach(file => {
     try {
       readJsonFile(file);
-      console.log(`✅ Arquivo ${file} carregado em cache`);
+      console.log(`✅ Arquivo data/${file} carregado em cache`);
     } catch (error) {
-      console.error(`❌ Erro ao carregar ${file}:`, error.message);
+      console.error(`❌ Erro ao carregar data/${file}:`, error.message);
     }
   });
 }

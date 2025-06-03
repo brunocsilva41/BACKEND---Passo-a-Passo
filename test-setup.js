@@ -8,9 +8,9 @@ const requiredFiles = [
   'server.js',
   'package.json', 
   'vercel.json',
-  'criar_conta.json',
-  'login.json',
-  'pagar_assinatura_trocar.json'
+  'data/criar_conta.json',
+  'data/login.json',
+  'data/pagar_assinatura_trocar.json'
 ];
 
 let allFilesExist = true;
@@ -41,7 +41,7 @@ if (allFilesExist) {
 // Testar leitura dos arquivos JSON
 console.log('\n📂 Testando leitura dos arquivos JSON:');
 
-const jsonFiles = ['criar_conta.json', 'login.json', 'pagar_assinatura_trocar.json'];
+const jsonFiles = ['data/criar_conta.json', 'data/login.json', 'data/pagar_assinatura_trocar.json'];
 
 jsonFiles.forEach(file => {
   try {

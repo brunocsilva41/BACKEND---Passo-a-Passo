@@ -15,8 +15,7 @@ module.exports = function handler(req, res) {
     res.status(405).json({ error: 'Método não permitido' });
     return;
   }
-  
-  try {
+    try {
     const data = readJsonFile('criar_conta.json');
     res.status(200).json(data);
   } catch (error) {
