@@ -1,0 +1,11 @@
+node_modules
+.git
+.env*
+*.log
+test-*.js
+deploy.test
+server.js
+DEPLOY.md
+PERFORMANCE.md
+README.md
+exemplos-uso.md

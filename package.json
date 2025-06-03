@@ -5,11 +5,8 @@
   "main": "api/index.js",
   "engines": {
     "node": ">=18.x"
-  },
-  "scripts": {
-    "dev": "vercel dev",
-    "build": "echo 'Build completed for Vercel'",
-    "start": "echo 'Use vercel dev for local development'"
+  },  "scripts": {
+    "dev": "vercel dev"
   },
   "dependencies": {},
   "devDependencies": {
