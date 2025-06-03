@@ -1,0 +1,40 @@
+{
+  "steps": [
+    {
+      "title": "1️⃣ Clique na aba 'Assinatura'",
+      "text": "No menu superior ou lateral da plataforma, clique na aba **Assinatura**.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/tela_assinatura_com_seta.png",
+      "alt_text": "Botão de Assinatura na navbar"
+    },
+    {
+      "title": "2️⃣ Veja os detalhes da sua assinatura",
+      "text": "Você será direcionado à tela com os detalhes da sua assinatura atual.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/teladeassinatura.png",
+      "alt_text": "Tela com detalhes da assinatura"
+    },
+    {
+      "title": "3️⃣ Para renovar, clique em 'Pagar Assinatura'",
+      "text": "Se quiser renovar seu plano atual, clique no botão **Pagar Assinatura**.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/botao_pagar_assinatura_com_seta.png",
+      "alt_text": "Botão Pagar Assinatura"
+    },
+    {
+      "title": "4️⃣ Para trocar de plano, clique em 'Trocar Assinatura'",
+      "text": "Caso deseje mudar para outro plano, clique em **Trocar Assinatura**.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/botao_trocar_assinatura_com_seta.png",
+      "alt_text": "Botão Trocar Assinatura"
+    },
+    {
+      "title": "5️⃣ Escolha o novo plano desejado",
+      "text": "Selecione o novo plano que deseja contratar.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/selecionar_assinatura_com_seta.png",
+      "alt_text": "Botão de troca de plano"
+    },
+    {
+      "title": "6️⃣ Confirme o método de pagamento",
+      "text": "Selecione o método de pagamento e clique em **Assinar** para concluir a troca.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/metodo_pagamento_com_seta.png",
+      "alt_text": "Tela de método de pagamento"
+    }
+  ]
+}

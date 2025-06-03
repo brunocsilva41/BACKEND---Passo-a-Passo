@@ -1,0 +1,16 @@
+{
+  "steps": [
+    {
+      "title": "1️⃣ Clique no botão de Login",
+      "text": "Na tela inicial, clique no botão de **Login** no canto superior direito.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/login_com_seta.png",
+      "alt_text": "Botão de Login com seta"
+    },
+    {
+      "title": "2️⃣ Clique em 'Acessar Login'",
+      "text": "Na janela aberta vamos preencher o e-mail e senha cadastrado e clicar no botão **Acessar Login**.",
+      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/acessar_login_com_seta.png",
+      "alt_text": "Botão Acessar Login com seta"
+    }
+  ]
+}
