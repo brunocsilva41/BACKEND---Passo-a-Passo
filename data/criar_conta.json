@@ -1,28 +1,54 @@
 {
-  "steps": [
-    {
-      "title": "1️⃣ Clique em 'Criar sua Conta'",
-      "text": "Na tela inicial, clique no botão **Criar sua Conta**.",
-      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/criar_sua_conta_com_seta.png",
-      "alt_text": "Botão Criar Conta com seta"
-    },
-    {
-      "title": "2️⃣ Preencha seus dados",
-      "text": "Preencha as informações solicitadas, aceite os termos e clique em **Prosseguir**.",
-      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/botao_prosseguir_cadastro_com_seta_step1.png",
-      "alt_text": "Formulário de cadastro com botão prosseguir"
-    },
-    {
-      "title": "3️⃣ Informe seu endereço",
-      "text": "Informe seu endereço completo e clique em **Finalizar Cadastro**.",
-      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/botao_finalizar_cadastro_step2.png",
-      "alt_text": "Botão Finalizar Cadastro"
-    },
-    {
-      "title": "4️⃣ Clique em Pagar Agora Para finalizar a Contratação do Plano",
-      "text": "Clique em **Pagar Agora** e você será direcionado a tela de pagamento.",
-      "image_url": "https://storage.cloud.google.com/e-saude-assist/imagens/pagar_agora_step3_com_seta.png",
-      "alt_text": "Botão Pagar Agora"
-    }
+  "richContent": [
+    [
+      {
+        "title": "1️⃣ Clique em 'Criar sua Conta'",
+        "type": "description",
+        "text": [
+          "Na tela inicial, clique no botão **Criar sua Conta**."
+        ]
+      },
+      {
+        "rawUrl": "https://storage.cloud.google.com/e-saude-assist/imagens/criar_sua_conta_com_seta.png",
+        "type": "image",
+        "accessibilityText": "Botão Criar Conta com seta"
+      },
+      {
+        "title": "2️⃣ Preencha seus dados",
+        "type": "description",
+        "text": [
+          "Preencha as informações solicitadas, aceite os termos e clique em **Prosseguir**."
+        ]
+      },
+      {
+        "type": "image",
+        "accessibilityText": "Formulário de cadastro com botão prosseguir",
+        "rawUrl": "https://storage.cloud.google.com/e-saude-assist/imagens/botao_prosseguir_cadastro_com_seta_step1.png"
+      },
+      {
+        "type": "description",
+        "title": "3️⃣ Informe seu endereço",
+        "text": [
+          "Informe seu endereço completo e clique em **Finalizar Cadastro**."
+        ]
+      },
+      {
+        "rawUrl": "https://storage.cloud.google.com/e-saude-assist/imagens/botao_finalizar_cadastro_step2.png",
+        "type": "image",
+        "accessibilityText": "Botão Finalizar Cadastro"
+      },
+      {
+        "text": [
+          "Clique em **Pagar Agora** e você será direcionado a tela de pagamento."
+        ],
+        "title": "4️⃣ Clique em Pagar Agora Para finalizar a Contratação do Plano",
+        "type": "description"
+      },
+      {
+        "type": "image",
+        "accessibilityText": "Botão Pagar Agora",
+        "rawUrl": "https://storage.cloud.google.com/e-saude-assist/imagens/pagar_agora_step3_com_seta.png"
+      }
+    ]
   ]
 }
